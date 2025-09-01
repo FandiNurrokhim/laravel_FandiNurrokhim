@@ -18,14 +18,14 @@
                 @endif
 
                 <div class="form-group mb-2">
-                    <a href="{{ url('master-items/form/new') }}" class="btn btn-secondary">+ Master Items Baru</a>
+                    <a href="{{ url('pasien/form/new') }}" class="btn btn-secondary">+ Pasien Baru</a>
                 </div>
                 <div class="card">
-                    <div class="card-header">Daftar Master Items</div>
+                    <div class="card-header">Daftar Pasien</div>
 
                     <div class="card-body">
-                        @include('master_items.index.filter')
-                        @include('master_items.index.table')
+                        @include('pasien.index.filter')
+                        @include('pasien.index.table')
                     </div>
                 </div>
             </div>
@@ -33,5 +33,5 @@
     </div>
 @endsection
 @section('js')
-    @include('master_items.index.js')
+    @include('pasien.index.js')
 @endsection

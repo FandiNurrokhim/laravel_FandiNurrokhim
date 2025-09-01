@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('kategori', function (Blueprint $table) {
+        Schema::create('rumah_sakit', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->string('kode');
+            $table->string('alamat');
+            $table->string('email')->unique();
+            $table->string('telepon');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +31,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kategori');
+        Schema::table('rumah_sakit', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 };

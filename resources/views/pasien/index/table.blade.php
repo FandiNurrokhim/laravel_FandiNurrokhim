@@ -1,8 +1,12 @@
+
+
 <table id="table" class="table table-striped" style="width:100%">
     <thead>
         <tr>
-            <th>Kode</th>
-            <th>Nama</th>
+            <th>Nama Pasien</th>
+            <th>Alamat</th>
+            <th>Email</th>
+            <th>No Telepon</th>
             <th>View</th>
         </tr>
     </thead>

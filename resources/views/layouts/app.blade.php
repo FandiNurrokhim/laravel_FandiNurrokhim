@@ -33,10 +33,10 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('master_items.index') }}">{{ __('Master Items') }}</a>
+                            <a class="nav-link" href="{{ route('rumah_sakit.index') }}">{{ __('Rumah Sakit') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('categories.index') }}">{{ __('Categories') }}</a>
+                            <a class="nav-link" href="{{ route('pasien.index') }}">{{ __('Pasien') }}</a>
                         </li>
                     </ul>
 

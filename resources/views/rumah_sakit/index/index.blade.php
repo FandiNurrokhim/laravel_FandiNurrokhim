@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 @if (session('success'))
                     <div class="alert alert-success alert-dismissible fade show" role="alert">
                         {{ session('success') }}
@@ -18,14 +18,14 @@
                 @endif
 
                 <div class="form-group mb-2">
-                    <a href="{{ url('categories/form/new') }}" class="btn btn-secondary">+ Kategori Baru</a>
+                    <a href="{{ url('rumah-sakit/form/new') }}" class="btn btn-secondary">+ Rumah Sakit Baru</a>
                 </div>
                 <div class="card">
-                    <div class="card-header">Daftar Kategori</div>
+                    <div class="card-header">Daftar Rumah Sakit</div>
 
                     <div class="card-body">
-                        @include('categories.index.filter')
-                        @include('categories.index.table')
+                        @include('rumah_sakit.index.filter')
+                        @include('rumah_sakit.index.table')
                     </div>
                 </div>
             </div>
@@ -33,5 +33,5 @@
     </div>
 @endsection
 @section('js')
-    @include('categories.index.js')
+    @include('rumah_sakit.index.js')
 @endsection

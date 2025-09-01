@@ -22,10 +22,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         $this->call([
-            KategoriSeeder::class,
+            RumahSakitSeeder::class,
         ]);
-        // $this->call([
-        //     MasterItemSeeder::class,
-        // ]);
     }
 }
